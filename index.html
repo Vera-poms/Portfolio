@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul class="menuList">
+            <svg width="26" height="26" xmlns="http://www.w3.org/2000/svg" class="close js-close">
+                <g fill="#151515" fill-rule="evenodd">
+                    <path d="m2.393.98 22.628 22.628-1.414 1.414L.979 2.395z"/>
+                    <path d="M.98 23.607 23.609.979l1.414 1.414L2.395 25.021z"/>
+                </g>
+            </svg>
+            <li class="nav-links">
+                <a href="#about">About Me</a> 
+            </li>
+            <li class="nav-links">
+                <a href="#projects">Projects</a>
+            </li>
+            <li class="nav-links">
+                <a href="#contact">Contact Me</a>
+            </li>
+        </ul>
+        <svg width="32" height="18" xmlns="http://www.w3.org/2000/svg" class="hamburger js-hamburger">
+            <g fill="#151515" fill-rule="evenodd">
+                <path d="M0 0h32v2H0zM0 8h32v2H0zM0 16h32v2H0z"/>
+            </g>
+        </svg>
+        
+    </nav>
+
+    <section class="intro" id="about">
+        <article>
+            <img src="https://assets.zyrosite.com/A85D79Zw2bcZMGKK/animation_640_lfz3plng-A3QBGjQE4EUy2rNG.gif" alt="welcome" class="welcome">
+            <p class="about">I am <strong class="name">Vera Ama Pomaa, </strong>
+                a <strong class="role">Front-end Developer</strong>, 
+                 passionate about turning ideas into interactive, mobile-first web experiences.
+                 Bringing designs to life with <strong>React</strong>, <strong>JavaScript</strong>, and modern CSS frameworks such as <strong class="tailwind">TailwindCSS</strong>, 
+                 <strong class="sass">SASS</strong> and <strong class="bootstrap">Bootstrap 5</strong>.
+                 Focused on clean code, responsive layouts, and engaging user interfaces.
+            </p>
+        </article>
+        <div class="profile-pic">
+            <img src="https://media.licdn.com/dms/image/v2/D4E03AQEvN8VjDfO3zA/profile-displayphoto-shrink_400_400/B4EZYc2JPfHYAk-/0/1744240679147?e=2147483647&v=beta&t=1vtQZUPsVT5QL3uuT8BuzFahDuO4kGLcpuofOy6ogtI" alt="profile-pic">
+        </div>
+    </section>
+
+    <section class="projects-container" id="projects">
+        <h1>Work With Me</h1>
+        <div class="projects">
+            <div class="project-1">
+            <img src="images/desktop-screenshot.png" alt="">
+            <div class="read-more">
+                <p>
+                    Developed a responsive landing page using HTML5, CSS (Flexbox & Grid), and
+                     vanilla JavaScript. Features interactive dropdown navigation, optimized images, 
+                     and clean code architecture for performance and accessibility across devices,
+                      ensuring a seamless, mobile-first user experience.
+                </p>
+                
+                <a href="https://intro-section-vera-poms.netlify.app/" target="_blank">See project</a>
+                
+            </div>
+        </div>
+        <div class="project-1">
+            <img src="images/desktop-view.png" alt="">
+            <div class="read-more">
+                <p>
+                    Built a feature-rich comments system with React, TypeScript, and TailwindCSS. 
+                    Supports nested replies, voting, editing, and deletion, with persistent 
+                    state via localStorage. Designed with modular components, responsive layouts, 
+                    and smooth interactions for consistent performance on all screen sizes.
+                </p>
+                <a href="https://interactivecommentsverapoms.netlify.app/" target="_blank">See project</a>
+            </div>
+            
+        </div>
+        <div class="project-1">
+            <img src="images/my_desktop_screenshot.png" alt="">
+            <div class="read-more">
+                <p>
+                    Created a mobile-first product page using HTML5, CSS (Flexbox & Grid) and TailwindCSS, and JavaScript. 
+                    Includes lightbox gallery, thumbnail navigation, cart functionality, and optimized assets 
+                    for fast load times. Designed for usability, responsiveness, and engaging shopping experiences 
+                    across devices.
+                </p>
+                <a href="https://ecommerce-product-page-vera.netlify.app/" target="_blank">See project</a>
+            </div>
+            
+        </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="contacts">
+        <h1>Let's get in touch</h1>
+        <article class="contact-me">
+            <div class="mobile">
+                <p><strong>Contact:</strong> 0551328172</p>
+                <p><strong>Email:</strong> <a href="mailto:verapomaa99@gmail.com">verapomaa99@gmail.com</a></p>
+            </div>
+            
+            <div class="profile-links">
+                
+                <div class="socials">
+                    <strong>Socials:</strong>
+                    <a href="https://github.com/Vera-poms" class="git">
+                        <img src="images/git logo.png" alt="github">
+                    </a>
+                    <a href="https://www.linkedin.com/in/vera-ama-pomaa-9a3b24179/?originalSubdomain=gh">
+                        <img src="images/linkedin.png" alt="linkedIn">
+                    </a>
+                </div>
+                <p>Copyright ©, All rights reserved.</p>
+
+            </div>
+
+            
+        </article>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
