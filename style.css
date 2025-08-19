@@ -79,14 +79,29 @@ nav{
     justify-content: space-around;
     padding: 30px 0px;
 }
-.projects-container h1, .contacts h1{
+.skills-logo{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.skills-logo img{
+    width: 50px;
+    height: 50px;
+}
+.skills h1{
+    font-size: 30px;
+}
+.projects-container h1, .contacts h1, .skills h1{
     font-family: "Mozilla Headline", sans-serif;
     letter-spacing: 0.05em;
     text-align: center;
-    font-size: 40px;
+    /* font-size: 40px; */
     font-weight: bold;
     text-transform: uppercase;
     text-wrap: wrap;
+}
+.projects-container h1, .contacts h1{
+    font-size: 40px;
 }
 .projects{
     width: 100%;
