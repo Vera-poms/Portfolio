@@ -33,7 +33,7 @@ nav{
     position: relative;
     z-index: 1;
     list-style-type: none;
-    background-color: white;
+    background-image: linear-gradient(to bottom, rgb(220, 140, 252), rgb(255, 192, 203));
     width: 60%;
     position: absolute;
     top: 0;
@@ -42,9 +42,13 @@ nav{
     transition: 0.9s ease-in-out;
     margin-top: 0;
     text-decoration: none;
+    font-weight: bold;
 }
 .menuList{
     display: none;
+}
+.menuList .my-cv{
+    background-color: purple;
 }
 .nav-links a{
     display: block;
@@ -143,7 +147,7 @@ nav{
 .project-1 p{
     padding: 0 10px;
 }
-.project-1 a{
+.project-1 a, .my-cv{
     background-color: blue;
     color: white;
     text-decoration: none;
@@ -153,7 +157,7 @@ nav{
     border-radius: 5px;
     padding: 5px 10px;
 }
-.project-1 a:hover{
+.project-1 a:hover, .my-cv:hover{
     background-color: rgb(181, 181, 248);
     border: 1px solid blue;
     color: rgb(53, 53, 53);
@@ -184,7 +188,6 @@ nav{
     justify-content: center;
     align-items: center;
     min-width: auto;
-    
 }
 .profile-links{
     display: flex;
@@ -209,6 +212,10 @@ nav{
     margin-left: 5px;
     width: 35px;
     height: 35px;
+}
+.my-cv{
+    width: 120px;
+    text-align: center;
 }
 
 
@@ -250,6 +257,14 @@ nav{
     .menuList.links{
         display: flex !important;
         background: none;
+    }
+    .my-cv{
+        height: 20px;
+        margin-top: 0;
+        position: absolute;
+        right: 20px;
+        top: 12px;
+        background-color: rgb(71, 71, 163);
     }
     .intro{
         width: 98%;
