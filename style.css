@@ -35,7 +35,7 @@ nav{
     position: absolute;
     z-index: 5;
     list-style-type: none;
-    background-image: linear-gradient(to bottom, rgb(220, 140, 252), rgb(255, 192, 203));
+    background-image: linear-gradient(to bottom, #f3e8ff, #ffe4f1);
     width: 60%;
     position: absolute;
     top: 0;
@@ -47,13 +47,11 @@ nav{
     font-weight: bold;
     transition: left 0.5s ease-in-out;
 }
-/* .menuList .my-cv{
-    
-} */
+
 .nav-links a{
     display: block;
     text-decoration: none;
-    color: black;
+    color: #333;
     padding-bottom: 20px;
 }
 
