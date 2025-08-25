@@ -35,7 +35,7 @@ nav{
     position: absolute;
     z-index: 5;
     list-style-type: none;
-    background-image: linear-gradient(to bottom, rgb(220, 140, 252), rgb(255, 192, 203));
+    background-image: linear-gradient(to bottom, #f3e8ff, #ffe4f1);
     width: 60%;
     position: absolute;
     top: 0;
@@ -47,13 +47,11 @@ nav{
     font-weight: bold;
     transition: left 0.5s ease-in-out;
 }
-.menuList .my-cv{
-    background-color: purple;
-}
+
 .nav-links a{
     display: block;
     text-decoration: none;
-    color: black;
+    color: #333;
     padding-bottom: 20px;
 }
 
@@ -83,6 +81,9 @@ nav{
     justify-content: space-around;
     padding: 30px 0px;
 }
+.skills{
+    background-color: #f9f9f9;
+}
 .skills-logo{
     display: grid;
     place-items: center;
@@ -103,6 +104,7 @@ nav{
 .skills-logo img{
     width: 30px;
     height: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .skills-logo h2, .experiences h2{
     font-size: 20px;
@@ -129,9 +131,8 @@ nav{
     color: hsla(293, 47%, 32%, 0.753);
 }
 .experiences-detailed {
-   background-image: linear-gradient(to bottom, hsla(175, 70%, 74%, 0.397),hsla(313, 62%, 69%, 0.397)); 
-   
-
+   /* background-image: linear-gradient(to bottom, hsla(175, 70%, 74%, 0.397),hsla(313, 62%, 69%, 0.397));  */
+   background-color: #f9f9f9;
 }
 .experiences-detailed article{
    padding: 30px;
@@ -178,7 +179,7 @@ nav{
 .project-1 p{
     padding: 0 10px;
 }
-.project-1 a, .my-cv{
+.project-1 a, .my-cv, .my-cv-footer{
     background-color: blue;
     color: white;
     text-decoration: none;
@@ -188,7 +189,7 @@ nav{
     border-radius: 5px;
     padding: 5px 10px;
 }
-.project-1 a:hover, .my-cv:hover{
+.project-1 a:hover, .my-cv:hover, .my-cv-footer:hover{
     background-color: rgb(181, 181, 248);
     border: 1px solid blue;
     color: rgb(53, 53, 53);
@@ -207,11 +208,13 @@ nav{
 .contact-me{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
     background-image: linear-gradient(to right, hsla(208, 24%, 60%, 0.726),hsla(271, 53%, 74%, 0.459));
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     font-size: 18px;
+    width: 100%;
 }
 .contact-me p{
     display: flex;
@@ -219,39 +222,27 @@ nav{
     justify-content: center;
     align-items: center;
     min-width: auto;
+    font-weight: bold;
 }
 .profile-links{
     display: flex;
-    flex-direction: column;
-    padding-left: 10px;
-}
-.profile-links p{
-    font-size: 12px;
-    font-weight: bold;
-}
-.socials{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+    padding-top: 30px;
 }
 .profile-links img{
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
 }
-.git img{
-    border-radius: 50%;
-    margin-left: 5px;
-    width: 35px;
-    height: 35px;
-}
-.my-cv{
-    width: 120px;
+.menuList .my-cv, .my-cv-footer{
     text-align: center;
+    background-color: purple;
 }
+
 
 
 @media  (min-width: 800px) and (max-width: 1023px){
-    .projects, .contact-me{
+    .projects{
         display: grid;
         place-items: center;
         grid-template-columns: 1fr 1fr;
@@ -272,12 +263,15 @@ nav{
     .hamburger, .close{
         display: none;
     }
-    .menuList{
+    .menuList, .menuList.links{
         display: flex !important;
-        flex-direction: row;
-        float: right;
+        width: 100vw;
+        align-items: center;
+        height: 70px;
         list-style: none;
         color: hsl(0, 0%, 46%);
+        background: none;
+        position: sticky;
     }
     .nav-links a{
         font-size: 16px;
@@ -295,17 +289,13 @@ nav{
     ul li{
         padding-right: 20px;
     }
-    .menuList.links{
-        display: flex !important;
-        background: none;
-    }
     .my-cv{
         height: 20px;
         margin-top: 0;
         position: absolute;
         right: 20px;
         top: 12px;
-        background-color: rgb(71, 71, 163);
+        background-color: purple;
     }
     .intro{
         width: 98%;
@@ -317,7 +307,6 @@ nav{
     }
     .intro article{
         text-align: left;
-        /* font-size: 18px; */
         display: flex;
         flex-direction: column;
         justify-items: center;
@@ -327,7 +316,6 @@ nav{
         background-image: none;
         background-color: white;
         font-size: 22px;
-
     }
     .profile-pic img{
         width: 350px;
@@ -374,12 +362,18 @@ nav{
         flex-direction: row;
         justify-content: space-around;
         padding: 30px 0px;
-        
     }
-    .contact-me{
-        display: grid;
-        place-items: center;
-        grid-template-columns: 1fr 1fr;
+    .profile-links{
+        width: 500px;
+        padding-top: 30px;
     }
-    
+    .profile-links img{
+        width: 50px;
+        height: 50px;
+    }
+     .skills-logo img:hover{
+        transform: scale(1.1);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        cursor: pointer;
+     }
 }
