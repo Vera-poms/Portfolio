@@ -1,182 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <nav>
-        <ul class="menuList">
-            <svg width="26" height="26" xmlns="http://www.w3.org/2000/svg" class="close js-close">
-                <g fill="#151515" fill-rule="evenodd">
-                    <path d="m2.393.98 22.628 22.628-1.414 1.414L.979 2.395z"/>
-                    <path d="M.98 23.607 23.609.979l1.414 1.414L2.395 25.021z"/>
-                </g>
-            </svg>
-            <li class="nav-links">
-                <a href="#about">About Me</a> 
-            </li>
-            <li class="nav-links">
-                <a href="#projects">Projects</a>
-            </li>
-            <li class="nav-links">
-                <a href="#contact">Contact Me</a>
-            </li>
-             <a href="https://drive.google.com/file/d/1yybAOZsN467Aq8MUka0dGsz9AcF23BY1/view?usp=drive_link" class="my-cv">Download my CV</a>
-        </ul>
-        <svg width="32" height="18" xmlns="http://www.w3.org/2000/svg" class="hamburger js-hamburger">
-            <g fill="#151515" fill-rule="evenodd">
-                <path d="M0 0h32v2H0zM0 8h32v2H0zM0 16h32v2H0z"/>
-            </g>
+      <ul class="menuList">
+        <svg
+          width="26"
+          height="26"
+          xmlns="http://www.w3.org/2000/svg"
+          class="close js-close"
+        >
+          <g fill="#151515" fill-rule="evenodd">
+            <path d="m2.393.98 22.628 22.628-1.414 1.414L.979 2.395z" />
+            <path d="M.98 23.607 23.609.979l1.414 1.414L2.395 25.021z" />
+          </g>
         </svg>
-        
+        <li class="nav-links">
+          <a href="#about">About Me</a>
+        </li>
+        <li class="nav-links">
+          <a href="#projects">Projects</a>
+        </li>
+        <li class="nav-links">
+          <a href="#contact">Contact Me</a>
+        </li>
+        <a
+          href="https://drive.google.com/file/d/1yybAOZsN467Aq8MUka0dGsz9AcF23BY1/view?usp=drive_link"
+          target="_blank"
+          class="my-cv"
+          >Download my CV</a
+        >
+      </ul>
+      <svg
+        width="32"
+        height="18"
+        xmlns="http://www.w3.org/2000/svg"
+        class="hamburger js-hamburger"
+      >
+        <g fill="#151515" fill-rule="evenodd">
+          <path d="M0 0h32v2H0zM0 8h32v2H0zM0 16h32v2H0z" />
+        </g>
+      </svg>
     </nav>
 
     <section class="intro">
-        <article>
-            <img src="https://assets.zyrosite.com/A85D79Zw2bcZMGKK/animation_640_lfz3plng-A3QBGjQE4EUy2rNG.gif" alt="welcome" class="welcome">
-            <h1 id="about">About Me</h1>
-            <p class="about">I am <strong class="name">Vera Ama Pomaa, </strong>
-                a <strong class="role">Front-end Developer</strong>, 
-                 passionate about turning ideas into interactive, mobile-first web experiences.
-                 <br>Bringing designs to life with <strong>React</strong>, <strong>JavaScript</strong>, and modern CSS frameworks such as <strong class="tailwind">TailwindCSS</strong>, 
-                 <strong class="sass">SASS</strong> and <strong class="bootstrap">Bootstrap 5</strong>.<br>
-                 Focused on clean code, responsive layouts, and engaging user interfaces.
-            </p>
-        </article>
-        <div class="profile-pic">
-            <img src="images/my_profile.jpg" alt="profile-pic">
-        </div>
+      <article>
+        <img
+          src="https://assets.zyrosite.com/A85D79Zw2bcZMGKK/animation_640_lfz3plng-A3QBGjQE4EUy2rNG.gif"
+          alt="welcome"
+          class="welcome"
+        />
+        <h1 id="about">About Me</h1>
+        <p class="about">
+          I am Vera Ama Pomaa, a Frontend and Backend Web Developer passionate about
+          turning ideas into interactive, mobile-first web experiences. I
+          specialize in React for building responsive UIs and FastAPI for
+          developing secure, scalable APIs, with hands-on experience in crafting
+          modern web solutions. Skilled in JavaScript and CSS frameworks such as
+          TailwindCSS, SASS, and Bootstrap 5, I focus on clean code, responsive
+          layouts, and engaging user interfaces. Dedicated to collaboration and
+          continuous learning, I enjoy bringing designs to life while building
+          reliable systems that deliver real-world impact.
+        </p>
+      </article>
+      <div class="profile-pic">
+        <img src="images/my_profile.jpg" alt="profile-pic" />
+      </div>
     </section>
 
     <section class="skills">
-        <h1>Skills showcase</h1>
-        <div class="skills-sub">
-            <div class="skills-logo">
-                <h2>Proficient in:</h2>
-                <div class="images">
-                    <img src="images/html_logo.jpg" alt="html-logo">
-                    <img src="images/css-logo.png" alt="css-logo">
-                    <img src="images/js_logo.png" alt="js-logo">
-                    <img src="images/react_logo.png" alt="react-logo">
-                    <img src="images/motion_logo.png" alt="motion-logo">
-                    <img src="images/bootstrap_logo.png" alt="">
-                    <img src="images/tailwind_logo.png" alt="">
-                    <img src="images/sass_logo.png" alt="">
-                </div>
-            </div>
-
-            <div class="skills-logo">
-                <h2>Learning:</h2>
-                <div class="images">
-                    <img src="/images/react_native_logo.png" alt="">
-                    <img src="/images/python-logo.png" alt="">
-                    <img src="/images/expo_logo.png" alt="">
-                </div>
-            </div>
+      <h1>Skills showcase</h1>
+      <div class="skills-sub">
+        <div class="skills-logo">
+          <h2>Proficient in:</h2>
+          <div class="images">
+            <img src="images/html_logo.jpg" alt="html-logo" />
+            <img src="images/css-logo.png" alt="css-logo" />
+            <img src="images/js_logo.png" alt="js-logo" />
+            <img src="images/react_logo.png" alt="react-logo" />
+            <img src="images/motion_logo.png" alt="motion-logo" />
+            <img src="images/bootstrap_logo.png" alt="" />
+            <img src="images/tailwind_logo.png" alt="" />
+            <img src="images/sass_logo.png" alt="" />
+          </div>
         </div>
+
+        <div class="skills-logo">
+          <h2>Learning:</h2>
+          <div class="images">
+            <img src="/images/react_native_logo.png" alt="" />
+            <img src="/images/python-logo.png" alt="" />
+            <img src="/images/expo_logo.png" alt="" />
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="experiences">
-        <h1>Experience</h1>
-        <div class="experiences-detailed">
-            <article>
-                <h2>Front-end Developer</h2>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Amet labore illum ab commodi inventore. Unde, aliquam. 
-                    Quae in dolores dolorem esse dolor deserunt omnis distinctio 
-                    rerum sit quisquam molestias porro voluptate autem, suscipit 
-                    
-                </p>
-            </article>
-            <article>
-                <h2>Researcher</h2>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Amet labore illum ab commodi inventore. Unde, aliquam. 
-                    Quae in dolores dolorem esse dolor deserunt omnis distinctio 
-                    rerum sit quisquam molestias porro voluptate autem, suscipit 
-                </p>
-            </article>
-        </div>
+      <h1>Experience</h1>
+      <div class="experiences-detailed">
+        <article>
+          <h2>Front-end Developer</h2>
+          <p>
+            As a Frontend Web Developer, I design and build responsive, user-focused web applications with React and modern CSS frameworks like Tailwind CSS. My experience includes developing e-commerce prototypes with product catalogs, cart and checkout flows, and creating interactive platforms such as a nested comments system. I focus on clean UI design, full CRUD functionality, mobile-first responsiveness, and seamless deployment with Netlify, showcasing end-to-end project ownership from development to hosting.
+          </p>
+        </article>
+        <article>
+          <h2>Back-end Developer</h2>
+          <p>
+            As a Backend Developer, I build secure and scalable APIs with FastAPI and MongoDB. My experience includes implementing JWT authentication with role-based access control, designing and documenting RESTful endpoints, and ensuring seamless integration with frontend applications. I focus on data security, API usability, and efficient storage/retrieval systems, delivering backend solutions that support reliable and dynamic web applications.
+          </p>
+        </article>
+      </div>
     </section>
 
     <section class="projects-container" id="projects">
-        <h1>Project Gallery</h1>
-        <div class="projects">
-            <div class="project-1">
-            <img src="images/desktop-screenshot.png" alt="">
-            <div class="read-more">
-                <p>
-                    Developed a responsive landing page using HTML5, CSS (Flexbox & Grid), and
-                     vanilla JavaScript. Features interactive dropdown navigation, optimized images, 
-                     and clean code architecture for performance and accessibility across devices,
-                      ensuring a seamless, mobile-first user experience.
-                </p>
-                
-                <a href="https://intro-section-vera-poms.netlify.app/" target="_blank">See project</a>
-                
-            </div>
+      <h1 class="project-gallery">Project Gallery</h1>
+      <div class="projects">
+        <div class="project-1">
+          <img
+            src="images/advert-management-platform-api.onrender.com_docs.png"
+            alt=""
+          />
+          <div class="read-more">
+            <h1 class="read-more-header">Advert Management API</h1>
+            <p>
+              Built a fully functioning API using FastAPI and MongoDB to manage
+              advertisement storage and retrieval for homepage display.
+              Implemented JWT authentication with role-based access control to
+              secure advert creation, editing, and deletion. Designed and
+              documented RESTful endpoints to improve API usability and support
+              seamless frontend integration.
+            </p>
+
+            <a
+              href="https://advert-management-platform-api.onrender.com/docs"
+              target="_blank"
+              >See project</a
+            >
+          </div>
         </div>
         <div class="project-1">
-            <img src="images/desktop-view.png" alt="">
-            <div class="read-more">
-                <p>
-                    Built a feature-rich comments system with React, TypeScript, and TailwindCSS. 
-                    Supports nested replies, voting, editing, and deletion, with persistent 
-                    state via localStorage. Designed with modular components, responsive layouts, 
-                    and smooth interactions for consistent performance on all screen sizes.
-                </p>
-                <a href="https://interactivecommentsverapoms.netlify.app/" target="_blank">See project</a>
-            </div>
-            
+          <img src="images/desktop-view.png" alt="" />
+          <div class="read-more">
+            <h1 class="read-more-header">Interactive Comments Section Page</h1>
+            <p>
+              Built a feature-rich comments system with React, TypeScript, and
+              TailwindCSS. Supports nested replies, voting, editing, and
+              deletion, with persistent state via localStorage. Designed with
+              modular components, responsive layouts, and smooth interactions
+              for consistent performance on all screen sizes.
+            </p>
+            <a
+              href="https://interactivecommentsverapoms.netlify.app/"
+              target="_blank"
+              >See project</a
+            >
+          </div>
         </div>
         <div class="project-1">
-            <img src="images/my_desktop_screenshot.png" alt="">
-            <div class="read-more">
-                <p>
-                    Created a mobile-first product page using HTML5, CSS (Flexbox & Grid) and TailwindCSS, and JavaScript. 
-                    Includes lightbox gallery, thumbnail navigation, cart functionality, and optimized assets 
-                    for fast load times. Designed for usability, responsiveness, and engaging shopping experiences 
-                    across devices.
-                </p>
-                <a href="https://ecommerce-product-page-vera.netlify.app/" target="_blank">See project</a>
-            </div>
-            
+          <img src="images/my_desktop_screenshot.png" alt="" />
+          <div class="read-more">
+            <h1 class="read-more-header">A Sneaker Sales Page</h1>
+            <p>
+              Created a mobile-first product page using HTML5, CSS (Flexbox &
+              Grid) and TailwindCSS, and JavaScript. Includes lightbox gallery,
+              thumbnail navigation, cart functionality, and optimized assets for
+              fast load times. Designed for usability, responsiveness, and
+              engaging shopping experiences across devices.
+            </p>
+            <a
+              href="https://ecommerce-product-page-vera.netlify.app/"
+              target="_blank"
+              >See project</a
+            >
+          </div>
         </div>
-        </div>
+      </div>
     </section>
 
     <footer id="contact" class="contacts">
-        <h1>Contact Information</h1>
-        <article class="contact-me">
-            <div class="profile-links">
-
-                <a href="https://wa.me/2330551328172">
-                    <img src="images/whatsapp.png" alt="" class="whatsapp">
-                </a>
-                <a href="mailto:verapomaa99@gmail.com">
-                    <img src="/images/mail.png" alt="" class="email">
-                </a>
-                <a href="https://github.com/Vera-poms" class="git">
-                    <img src="images/github.png" alt="github">
-                </a>
-                <a href="https://www.linkedin.com/in/vera-ama-pomaa-9a3b24179/?originalSubdomain=gh">
-                    <img src="images/linkedin.png" alt="linkedIn">
-                </a>
-
-            </div>
-            <a href="https://drive.google.com/file/d/1yybAOZsN467Aq8MUka0dGsz9AcF23BY1/view?usp=drive_link" class="my-cv-footer">Download my CV</a>
-            <p>Copyright ©, All rights reserved.</p>
-        </article>
+      <h1>Contact Information</h1>
+      <article class="contact-me">
+        <div class="profile-links">
+          <a href="https://wa.me/2330551328172" target="_blank">
+            
+            <img src="images/whatsapp.png" alt="" class="whatsapp" />
+          </a>
+          <a href="mailto:verapomaa99@gmail.com" target="_blank">
+            <img src="/images/mail.png" alt="" class="email" />
+          </a>
+          <a href="https://github.com/Vera-poms" target="_blank" class="git">
+            <img src="images/github.png" alt="github" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/vera-ama-pomaa-9a3b24179/?originalSubdomain=gh"
+            target="_blank"
+          >
+            <img src="images/linkedin.png" alt="linkedIn" />
+          </a>
+        </div>
+        <a
+          href="https://drive.google.com/file/d/1yybAOZsN467Aq8MUka0dGsz9AcF23BY1/view?usp=drive_link"
+          target="_blank"
+          class="my-cv-footer"
+          >Download my CV</a
+        >
+        <p>Copyright ©, All rights reserved.</p>
+      </article>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

@@ -67,6 +67,7 @@ nav{
     border-radius: 20px;
     background-image: linear-gradient(to right, hsla(234, 85%, 82%, 0.205),rgba(230, 170, 248, 0.438));
     font-size: 15px;
+    font-family: Verdana;
 }
 .profile-pic img{
     width: 200px;
@@ -113,14 +114,13 @@ nav{
     padding: 0 10px;
 }
 .projects-container h1, .contacts h1, .skills h1, .intro h1, .skills-logo h2, .experiences h1, .experiences h2{
-    font-family: "Mozilla Headline", sans-serif;
     letter-spacing: 0.05em;
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
     text-wrap: wrap;
 }
-.projects-container h1, .contacts h1, .intro h1, .skills h1{
+.project-gallery, .contacts h1, .intro h1, .skills h1{
     font-size: 25px;
 }
 .experiences h2{
@@ -131,7 +131,6 @@ nav{
     color: hsla(293, 47%, 32%, 0.753);
 }
 .experiences-detailed {
-   /* background-image: linear-gradient(to bottom, hsla(175, 70%, 74%, 0.397),hsla(313, 62%, 69%, 0.397));  */
    background-color: #f9f9f9;
 }
 .experiences-detailed article{
@@ -150,7 +149,7 @@ nav{
 }
 .project-1{
     width: 300px;
-    height: 420px;
+    height: 440px;
     border-radius: 10px;
     border: 1px solid black;
     background-image: linear-gradient(to bottom, hsla(216, 81%, 90%, 0.945),hsla(285, 34%, 77%, 0.253));
@@ -204,6 +203,12 @@ nav{
     justify-content: center;
     align-items: center;
     height: 100px;
+}
+.read-more-header{
+    font-size: 16px;
+    font-family: Verdana;
+    margin: 0;
+    padding-top: 10px;
 }
 .contact-me{
     display: flex;
@@ -315,14 +320,15 @@ nav{
     .about{
         background-image: none;
         background-color: white;
-        font-size: 22px;
+        font-size: 20px;
+        margin: 0;
     }
     .profile-pic img{
         width: 350px;
         height: 350px;
         border-radius: 50%;
     }
-    .projects-container h1, .contacts h1, .skills h1, .intro h1, .experiences h1{
+    .project-gallery, .contacts h1, .skills h1, .intro h1, .experiences h1{
         text-align: left;
         padding-left: 30px;
         font-size: 35px;
@@ -376,4 +382,8 @@ nav{
         box-shadow: 0 4px 10px rgba(0,0,0,0.15);
         cursor: pointer;
      }
+     .read-more-header{
+        font-size: 15px;
+        font-family: Verdana;
+    }
 }
