@@ -113,7 +113,7 @@ nav{
 .images{
     padding: 0 10px;
 }
-.projects-container h1, .contacts h1, .skills h1, .intro h1, .skills-logo h2, .experiences h1, .experiences h2{
+.project-gallery, .contacts h1, .skills h1, .intro h1, .skills-logo h2, .experiences h1, .experiences h2{
     letter-spacing: 0.05em;
     text-align: center;
     font-weight: bold;
@@ -179,7 +179,7 @@ nav{
     padding: 0 10px;
 }
 .project-1 a, .my-cv, .my-cv-footer{
-    background-color: blue;
+    background-color: purple;
     color: white;
     text-decoration: none;
     border: 0;
@@ -187,6 +187,7 @@ nav{
     font-weight: bold;
     border-radius: 5px;
     padding: 5px 10px;
+    text-align: center;
 }
 .project-1 a:hover, .my-cv:hover, .my-cv-footer:hover{
     background-color: rgb(181, 181, 248);
@@ -209,17 +210,21 @@ nav{
     font-family: Verdana;
     margin: 0;
     padding-top: 10px;
+    text-align: center;
 }
 .contact-me{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-image: linear-gradient(to right, hsla(208, 24%, 60%, 0.726),hsla(271, 53%, 74%, 0.459));
+    background-image: linear-gradient(to right, hsla(208, 24%, 60%, 0.726),hsla(271, 22%, 42%, 0.849));
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     font-size: 18px;
     width: 100%;
+}
+.contact-me a{
+    margin-top: 20px;
 }
 .contact-me p{
     display: flex;
@@ -227,7 +232,7 @@ nav{
     justify-content: center;
     align-items: center;
     min-width: auto;
-    font-weight: bold;
+    font-size: 12px;
 }
 .profile-links{
     display: flex;
@@ -239,10 +244,8 @@ nav{
     width: 30px;
     height: 30px;
 }
-.menuList .my-cv, .my-cv-footer{
-    text-align: center;
-    background-color: purple;
-}
+
+
 
 
 
