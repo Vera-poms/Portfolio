@@ -82,8 +82,12 @@ nav{
     justify-content: space-around;
     padding: 30px 0px;
 }
-.skills{
-    background-color: #f9f9f9;
+.skills{width: 100vw;}
+.skills-sub{
+    background-image: linear-gradient(to right, hsla(206, 55%, 54%, 0.431),hsla(272, 50%, 39%, 0.304));
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
 }
 .skills-logo{
     display: grid;
@@ -92,10 +96,11 @@ nav{
 }
 .skills-logo .images{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-items: center;
-    gap: 20px;
+    row-gap: 30px;
+    column-gap: 0;
     grid-auto-rows: auto;
     width: 90%;
     padding-top: 8px;
@@ -103,12 +108,16 @@ nav{
 }
 
 .skills-logo img{
-    width: 30px;
-    height: 30px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 90px;
+    height: 90px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 1px 2px 10px purple;
+    border-radius: 20px;
 }
-.skills-logo h2, .experiences h2{
-    font-size: 20px;
+.skills-logo h2{
+    font-size: 28px;
+    color: hsla(259, 61%, 28%, 0.96);
 }
 .images{
     padding: 0 10px;
@@ -123,15 +132,15 @@ nav{
 .project-gallery, .contacts h1, .intro h1, .skills h1{
     font-size: 25px;
 }
+
 .experiences h2{
     text-align: left;
     color: hsl(233, 25%, 36%);
+    
 }
-.skills-logo h2{
-    color: hsla(293, 47%, 32%, 0.753);
-}
+
 .experiences-detailed {
-   background-color: #f9f9f9;
+   background-image: linear-gradient(to right, hsla(206, 55%, 54%, 0.267),hsla(272, 50%, 39%, 0.148));
 }
 .experiences-detailed article{
    padding: 30px;
@@ -217,7 +226,7 @@ nav{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-image: linear-gradient(to right, hsla(208, 24%, 60%, 0.726),hsla(271, 22%, 42%, 0.849));
+    background-image: linear-gradient(to right, hsla(206, 61%, 37%, 0.099),hsla(272, 50%, 39%, 0.304));
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     font-size: 18px;
@@ -246,6 +255,13 @@ nav{
 }
 
 
+@media  (min-width: 520px) and (max-width: 799px)
+{
+    .skills-logo img{
+        padding: 40px;
+        
+    }
+}
 
 
 
@@ -264,6 +280,15 @@ nav{
     }
     .about{
         font-size: 22px;
+    }
+    .skills-logo .images{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+    .skills-logo img{
+        padding: 45px;
+        
     }
 }
 
@@ -339,12 +364,7 @@ nav{
     .skills{
         width: 100%;
     }
-    .skills-sub{
-        display: flex;
-        justify-content: center;
-    }
     .skills-logo{
-        display: flex;
         width: 500px;
     }
     .skills-logo h2{
@@ -352,12 +372,21 @@ nav{
     }
     .skills-logo .images{
         display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        row-gap: 50px;
+        column-gap: 50px;
         align-self: flex-end;
-        width: 200px;
+        width: 400px;
+    }
+    .skills-logo img{
+        padding: 30px;
     }
     .skills-logo h2, .experiences h2{
         font-size: 28px;
         text-align: center;
+    }
+    .experiences h1{
+        padding-top: 50px;
     }
     .experiences-detailed{
         width: 70%;
@@ -380,9 +409,9 @@ nav{
         width: 50px;
         height: 50px;
     }
-     .skills-logo img:hover{
+     .skills-logo img:hover, .profile-links img:hover{
         transform: scale(1.1);
-        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        transition: 0.5s ease-in-out;
         cursor: pointer;
      }
      .read-more-header{
