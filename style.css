@@ -62,11 +62,11 @@ nav{
 .about{
     max-width: auto;
     text-wrap: wrap;
-    padding: 15px 30px;
+    padding: 25px 30px;
     margin: 0 30px;
-    border-radius: 20px;
-    background-image: linear-gradient(to right, hsla(234, 85%, 82%, 0.205),rgba(230, 170, 248, 0.438));
-    font-size: 15px;
+    border-radius: 15px;
+    background-image: linear-gradient(to right, hsla(234, 54%, 73%, 0.319),rgba(230, 170, 248, 0.438));
+    font-size: 17px;
     font-family: Verdana;
 }
 .profile-pic img{
@@ -116,7 +116,7 @@ nav{
     border-radius: 20px;
 }
 .skills-logo h2{
-    font-size: 28px;
+    font-size: 20px;
     color: hsla(259, 61%, 28%, 0.96);
 }
 .images{
@@ -129,14 +129,14 @@ nav{
     text-transform: uppercase;
     text-wrap: wrap;
 }
-.project-gallery, .contacts h1, .intro h1, .skills h1{
+.project-gallery, .contacts h1, .intro h1, .skills h1, .experiences h1{
     font-size: 25px;
 }
 
 .experiences h2{
     text-align: left;
     color: hsl(233, 25%, 36%);
-    
+    font-size: 19px;
 }
 
 .experiences-detailed {
@@ -144,6 +144,7 @@ nav{
 }
 .experiences-detailed article{
    padding: 30px;
+   font-size: 17px;
 }
 .projects, .experiences-detailed {
     width: 100%;
@@ -226,7 +227,7 @@ nav{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-image: linear-gradient(to right, hsla(206, 61%, 37%, 0.099),hsla(272, 50%, 39%, 0.304));
+    background-image: linear-gradient(to right, hsla(206, 61%, 37%, 0.144),hsla(272, 50%, 39%, 0.304));
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     font-size: 18px;
