@@ -58,6 +58,8 @@ nav{
 .welcome{
     width: 300px;
     height: 150px;
+    display: flex;
+    align-self: center;
 }
 .about{
     max-width: auto;
@@ -331,6 +333,12 @@ nav{
         top: 12px;
         background-color: purple;
     }
+    .welcome{
+        width: 300px;
+        height: 180px;
+        display: flex;
+        align-self: center;
+    }
     .intro{
         width: 98%;
         display: flex;
@@ -351,6 +359,7 @@ nav{
         background-color: white;
         font-size: 20px;
         margin: 0;
+        padding: 0;
     }
     .profile-pic img{
         width: 350px;
